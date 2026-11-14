@@ -3,7 +3,7 @@
    Edite SOMENTE as 2 linhas abaixo e salve o arquivo.
    ============================================================ */
 var PAINEL_URL = 'painel-lucro-ten.vercel.app';          // endereço do seu painel, sem "/" no final
-var ID_DA_INSTALACAO = 'COLE-AQUI-O-ID-DA-INSTALACAO';       // o ID que o painel mostra na instalação de TESTE
+var ID_DA_INSTALACAO = 'c914e010-7791-40ee-bd8a-2d584587eaf5';       // o ID que o painel mostra na instalação de TESTE
 /* ============================================================
    Daqui para baixo não precisa mexer.
    ============================================================ */

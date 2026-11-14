@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teste 2 – VSL</title>
+<link rel="stylesheet" href="teste.css">
+<script src="config.js"></script>
+</head>
+<body>
+<div class="pagina">
+    <a class="voltar" href="index.html">← Menu do kit</a>
+    <h1>Teste 2 – VSL</h1>
+    <p class="nota">O vídeo de teste tem 60 segundos e mostra um contador na tela. O botão de compra aparece quando o vídeo passa de 20 segundos.</p>
+
+    <div class="card">
+        <!-- data-pl-vsl="nome": rastreia o vídeo. O nome aparece no painel. -->
+        <video src="video-teste.webm" controls preload="metadata" data-pl-vsl="vsl-teste"></video>
+        <p class="nota" style="margin-top:10px">Siga o roteiro do guia: dar play, pausar, pular a barra e assistir até o fim.</p>
+        <!-- data-pl-checkout: botão que leva ao checkout. Fica escondido até 20 segundos. -->
+        <a id="cta-video" class="btn" href="checkout.html" data-pl-checkout data-pl-label="Comprar (VSL)" hidden>Quero comprar agora</a>
+    </div>
+</div>
+<script src="kit.js"></script>
+</body>
+</html>

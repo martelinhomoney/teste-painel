@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teste 4 – Quiz + VSL</title>
+<link rel="stylesheet" href="teste.css">
+<script src="config.js"></script>
+</head>
+<body>
+<div class="pagina">
+    <a class="voltar" href="index.html">← Menu do kit</a>
+    <h1>Teste 4 – Quiz + VSL</h1>
+    <p class="nota">O quiz leva para a VSL, e a VSL leva para o checkout. Tudo no mesmo endereço, então o painel enxerga uma sessão só.</p>
+
+    <div class="card" id="intro">
+        <h2>Descubra seu perfil</h2>
+        <p>Responda 3 perguntas rápidas e veja o vídeo com o seu resultado.</p>
+        <button type="button" class="btn" id="start" data-pl-event="QuizStart" data-pl-label="Começar quiz">Começar</button>
+    </div>
+
+    <div class="card" id="quiz" hidden>
+        <div class="step" data-pl-quiz-step="1" data-pl-quiz-question="Qual sua cor favorita?">
+            <div class="progresso">Pergunta 1 de 3</div>
+            <h2>Qual sua cor favorita?</h2>
+            <div class="opcoes">
+                <button type="button" class="opcao" data-pl-quiz-answer="Azul">Azul</button>
+                <button type="button" class="opcao" data-pl-quiz-answer="Verde">Verde</button>
+                <button type="button" class="opcao" data-pl-quiz-answer="Vermelho">Vermelho</button>
+            </div>
+        </div>
+        <div class="step" data-pl-quiz-step="2" data-pl-quiz-question="Você prefere manhã ou noite?">
+            <div class="progresso">Pergunta 2 de 3</div>
+            <h2>Você prefere manhã ou noite?</h2>
+            <div class="opcoes">
+                <button type="button" class="opcao" data-pl-quiz-answer="Manhã">Manhã</button>
+                <button type="button" class="opcao" data-pl-quiz-answer="Noite">Noite</button>
+            </div>
+        </div>
+        <div class="step" data-pl-quiz-step="3" data-pl-quiz-question="Qual destes lugares você escolheria?">
+            <div class="progresso">Pergunta 3 de 3</div>
+            <h2>Qual destes lugares você escolheria?</h2>
+            <div class="opcoes">
+                <button type="button" class="opcao" data-pl-quiz-answer="Praia">Praia</button>
+                <button type="button" class="opcao" data-pl-quiz-answer="Montanha">Montanha</button>
+                <button type="button" class="opcao" data-pl-quiz-answer="Cidade">Cidade</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" id="fim" hidden>
+        <h2>Seu resultado em vídeo</h2>
+        <video src="video-teste.webm" controls preload="metadata" data-pl-vsl="vsl-quiz"></video>
+        <p class="nota" style="margin-top:10px">O botão de compra aparece depois de 20 segundos de vídeo.</p>
+        <a id="cta-video" class="btn" href="checkout.html" data-pl-checkout data-pl-label="Comprar (quiz + VSL)" hidden>Quero comprar agora</a>
+    </div>
+</div>
+<script src="kit.js"></script>
+</body>
+</html>

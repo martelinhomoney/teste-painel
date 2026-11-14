@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teste 1 – Quiz</title>
+<link rel="stylesheet" href="teste.css">
+<script src="config.js"></script>
+</head>
+<body>
+<div class="pagina">
+    <a class="voltar" href="index.html">← Menu do kit</a>
+    <h1>Teste 1 – Quiz</h1>
+    <p class="nota">Perguntas inofensivas, só para testar. Siga o roteiro do guia e acompanhe a caixa de teste aqui embaixo.</p>
+
+    <div class="card" id="intro">
+        <h2>Descubra seu perfil</h2>
+        <p>Responda 4 perguntas rápidas.</p>
+        <!-- QuizStart: marque o botão que começa o quiz -->
+        <button type="button" class="btn" id="start" data-pl-event="QuizStart" data-pl-label="Começar quiz">Começar</button>
+    </div>
+
+    <div class="card" id="quiz" hidden>
+        <!-- Cada pergunta: data-pl-quiz-step (número) + data-pl-quiz-question (texto).
+             Cada resposta: data-pl-quiz-answer (texto da resposta). -->
+        <div class="step" data-pl-quiz-step="1" data-pl-quiz-question="Qual sua cor favorita?">
+            <div class="progresso">Pergunta 1 de 4</div>
+            <h2>Qual sua cor favorita?</h2>
+            <div class="opcoes">
+                <button type="button" class="opcao" data-pl-quiz-answer="Azul">Azul</button>
+                <button type="button" class="opcao" data-pl-quiz-answer="Verde">Verde</button>
+                <button type="button" class="opcao" data-pl-quiz-answer="Vermelho">Vermelho</button>
+            </div>
+        </div>
+        <div class="step" data-pl-quiz-step="2" data-pl-quiz-question="Você prefere manhã ou noite?">
+            <div class="progresso">Pergunta 2 de 4</div>
+            <h2>Você prefere manhã ou noite?</h2>
+            <div class="opcoes">
+                <button type="button" class="opcao" data-pl-quiz-answer="Manhã">Manhã</button>
+                <button type="button" class="opcao" data-pl-quiz-answer="Noite">Noite</button>
+            </div>
+        </div>
+        <div class="step" data-pl-quiz-step="3" data-pl-quiz-question="Quantos dias livres você tem por semana?">
+            <div class="progresso">Pergunta 3 de 4</div>
+            <h2>Quantos dias livres você tem por semana?</h2>
+            <div class="opcoes">
+                <button type="button" class="opcao" data-pl-quiz-answer="1 a 2">1 a 2</button>
+                <button type="button" class="opcao" data-pl-quiz-answer="3 a 4">3 a 4</button>
+                <button type="button" class="opcao" data-pl-quiz-answer="5 ou mais">5 ou mais</button>
+            </div>
+        </div>
+        <div class="step" data-pl-quiz-step="4" data-pl-quiz-question="Qual destes lugares você escolheria?">
+            <div class="progresso">Pergunta 4 de 4</div>
+            <h2>Qual destes lugares você escolheria?</h2>
+            <div class="opcoes">
+                <button type="button" class="opcao" data-pl-quiz-answer="Praia">Praia</button>
+                <button type="button" class="opcao" data-pl-quiz-answer="Montanha">Montanha</button>
+                <button type="button" class="opcao" data-pl-quiz-answer="Cidade">Cidade</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" id="fim" hidden>
+        <h2>Pronto! Este é o seu resultado</h2>
+        <p>Aqui entraria a recomendação para a pessoa.</p>
+        <!-- data-pl-checkout: clique no botão que leva ao checkout (não é compra) -->
+        <a class="btn" href="checkout.html" data-pl-checkout data-pl-label="Ver recomendação (quiz)">Ver minha recomendação</a>
+    </div>
+</div>
+<script src="kit.js"></script>
+</body>
+</html>

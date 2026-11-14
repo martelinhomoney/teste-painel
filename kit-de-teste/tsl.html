@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teste 3 – Página de vendas (TSL)</title>
+<link rel="stylesheet" href="teste.css">
+<script src="config.js"></script>
+</head>
+<body>
+<div class="pagina">
+    <a class="voltar" href="index.html">← Menu do kit</a>
+    <h1>Teste 3 – Página de vendas (TSL)</h1>
+    <p class="nota">Página longa, para testar rolagem, seções e botões. Siga o roteiro do guia.</p>
+
+    <section class="sec" data-pl-section="promessa">
+        <h2>Seção 1 – Promessa</h2>
+        <p>Aqui vai a promessa principal da sua oferta.</p>
+        <!-- data-pl-cta: botão comum (rola até a oferta). Conta como CTAClick. -->
+        <p><a class="btn" href="#oferta" data-pl-cta data-pl-label="Ver oferta (topo)">Quero ver a oferta</a></p>
+    </section>
+
+    <section class="sec" data-pl-section="prova">
+        <h2>Seção 2 – Prova</h2>
+        <p>Depoimentos, resultados e provas sociais.</p>
+    </section>
+
+    <!-- data-pl-section: seção vista. data-pl-view-content: avisa que a oferta apareceu na tela (ViewContent). -->
+    <section class="sec" id="oferta" data-pl-section="oferta" data-pl-view-content>
+        <h2>Seção 3 – Oferta</h2>
+        <p>O que a pessoa recebe ao comprar.</p>
+    </section>
+
+    <section class="sec" data-pl-section="preco">
+        <h2>Seção 4 – Preço</h2>
+        <p>R$ 97,00 (valor de teste).</p>
+        <!-- data-pl-checkout: botão que leva ao checkout. Conta como CheckoutClick (clique, não compra). -->
+        <p><a class="btn" href="checkout.html" data-pl-checkout data-pl-label="Comprar (preço)">Comprar agora</a></p>
+    </section>
+
+    <section class="sec" data-pl-section="garantia">
+        <h2>Seção 5 – Garantia</h2>
+        <p>7 dias de garantia (texto de teste).</p>
+    </section>
+
+    <section class="sec" data-pl-section="faq">
+        <h2>Seção 6 – Perguntas frequentes</h2>
+        <p>Fim da página.</p>
+    </section>
+</div>
+</body>
+</html>
